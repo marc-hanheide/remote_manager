@@ -1,0 +1,11 @@
+<launch>
+	<arg name="VNC_OPTS" default="-scale 1280x768" />
+	<arg name="VNC_PORT" default="5900" />
+	<node pkg="vnc_runner" type="vnc.sh" name="x11vnc" output="screen">
+		<env name="VNC_OPTS" value="$(arg VNC_OPTS)" />
+		<env name="VNC_PORT" value="-rfbport $(arg VNC_PORT)" />
+	</node>
+
+	<node pkg="vnc_runner" type="launch.sh" name="noVNC" output="screen" args="--vnc localhost:$(arg VNC_PORT)"/>
+
+</launch>
