@@ -1,3 +1,6 @@
 [submodule "noVNC"]
 	path = vnc_runner/noVNC
 	url = https://github.com/novnc/noVNC.git
+[submodule "network-scripts"]
+	path = network-scripts
+	url = https://github.com/marc-hanheide/network-scripts
