@@ -18,6 +18,9 @@ All this is assuming this repository has been cloned in to `~/remote_manager` vi
     mkdir -p ~/.local/bin
     install ~/remote_manager/network-scripts/bin/ngrok1.lnx ~/.local/bin
     ```
+    
+1. Create the file `~/.ngrok` to configure the ngrok server and access secret for it (ask your admin)
+
 
 ## Launching
 
