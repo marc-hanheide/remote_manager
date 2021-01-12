@@ -9,7 +9,7 @@ All this is assuming this repository has been cloned in to `~/remote_manager` vi
 1. Install dependencies:
     
     ```
-    sudo apt update && sudo apt install x11vnc tmux
+    sudo apt update && sudo apt install x11vnc tmux net-tools
     ```
     
 1. Make `ngrok v1.0` available in the `$PATH`, by installing it into `~/.local/bin`:
